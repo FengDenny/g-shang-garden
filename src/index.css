@@ -13,7 +13,9 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
 }
+
 
 html,
 body,
@@ -23,9 +25,83 @@ body,
     height: 100%;
     width: 100%;
     font-family: 'Assistant', sans-serif;
+
+    @apply text-primary-green-100
 }
 
 .description-text {
     font-family: 'Lora', serif;
+}
+
+/* slick slider override */
+
+/* prev next btn */
+.slick-prev {
+    left: 20px !important;
+    z-index:1;
+}
+
+.slick-next {
+    right: 20px !important;
 
 }
+
+.slick-prev:before,
+.slick-next:before {
+    color: #FFCC00 !important;
+    font-size: 1.5rem !important;
+}
+
+
+/* dots  */
+.slick-dots {
+    position: absolute;
+    bottom: 0px !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px !important;
+    height: 40px !important;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 50px !important;
+    height: 50px !important;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+
+.slick-dots li button:before {
+    font-size: 1rem !important;
+    color: #A4C686 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FFCC00 !important;
+
+}
+
+
+/* active */
+/* .slick-active{
+    color:#A4C686 !important
+} */
