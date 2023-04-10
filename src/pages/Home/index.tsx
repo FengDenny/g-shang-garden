@@ -1,4 +1,6 @@
 import Hero from "./Hero";
+import Services from "./Services";
+import Offer from "./Offer";
 import PageTitle from "@/components/Helmet";
 import { translate } from "@/components/i18nTranslate/helper";
 
@@ -10,6 +12,8 @@ const index = (props: Props) => {
       <PageTitle pageTitle={translate("homeTitle")} />
       <div>
         <Hero />
+        <Services />
+        <Offer />
       </div>
     </>
   );
