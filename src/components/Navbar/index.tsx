@@ -21,14 +21,14 @@ const index = ({
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   const navbarBackground = isTopOfPage
     ? ""
-    : "bg-primary-green-300 drop-shadow";
+    : "bg-primary-green-300 drop-shadow-xl h-32 text-color-white transition-colors delay-75 duration-75 ease-in-out";
 
   return (
     <nav className="relative z-auto">
       <div
         className={`${navbarBackground} fixed top-0 z-999 flex h-20 w-full flex-row justify-between`}
       >
-        <div className="relative top-5  w-4/6">
+        <div className="relative top-5  w-4/6 pl-10">
           <img
             src={Logo}
             alt="G Shang Garden logo"
