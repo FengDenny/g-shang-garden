@@ -38,6 +38,17 @@ export default {
       transitionProperty: {
         bgSize5sEaseInOut: "background-size .5s ease-in-out",
       },
+      animation: { appear: "appear 300ms ease-in-out forwards" },
+      keyframes: {
+        appear: {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
+      },
     },
     screens: {
       below397: { max: "397px" },
