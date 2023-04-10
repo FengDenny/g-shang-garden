@@ -1,12 +1,17 @@
 import Hero from "./Hero";
+import PageTitle from "@/components/Helmet";
+import { translate } from "@/components/i18nTranslate/helper";
 
 type Props = {};
 
 const index = (props: Props) => {
   return (
-    <div>
-      <Hero />
-    </div>
+    <>
+      <PageTitle pageTitle={translate("homeTitle")} />
+      <div>
+        <Hero />
+      </div>
+    </>
   );
 };
 
