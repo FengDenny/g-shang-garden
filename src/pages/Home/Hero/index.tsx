@@ -2,6 +2,8 @@ import Slider from "react-slick";
 
 import { sliderImg } from "@/data/hero";
 
+import { translate } from "@/components/i18nTranslate/helper";
+
 type Props = {};
 
 const index = (props: Props) => {
@@ -20,20 +22,20 @@ const index = (props: Props) => {
         <div className="relative">
           <div className="absolute z-10 w-full">
             <h2
-              className=" z-10 mx-auto text-center font-extrabold text-color-white-100 below768:mt-28 
-            below768:text-xl xs:w-9/12
-            sm:mt-40
-            sm:w-11/12 sm:text-3xl md:mt-56
-            md:text-4xl"
+              className="relative z-10 mx-auto text-center font-extrabold uppercase text-color-white-100 
+            below768:mt-28 below768:text-xl
+            xs:w-9/12
+            sm:mt-40 sm:w-11/12 sm:text-3xl
+            md:mt-56 md:text-4xl"
             >
-              G Shang Garden 把想法变成现实
+              {translate("hero.title")}
               <span className="text-primary-green-100 md:text-2xl">.</span>
             </h2>
             <h6
               className="mx-auto mt-5
             text-center text-lg text-primary-yellow-100 xs:mt-1 xs:w-8/12 xs:text-sm sm:w-11/12"
             >
-              聯系電話: (00) 415-678-6636 ｜ 408-686-2888
+              {translate("hero.description")}
             </h6>
           </div>
 
