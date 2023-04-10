@@ -26,7 +26,7 @@ body,
     width: 100%;
     font-family: 'Assistant', sans-serif;
 
-    @apply text-primary-green-100
+    @apply text-primary-green-100 bg-bg-color-white;
 }
 
 .description-text {
@@ -37,13 +37,13 @@ body,
 
 /* prev next btn */
 .slick-prev {
-    left: 20px !important;
-    z-index:1;
+    left: 4rem !important;
+    z-index:995;
 }
 
 .slick-next {
-    right: 20px !important;
-
+    right: 4rem !important;
+    z-index:995;
 }
 
 .slick-prev:before,
@@ -100,8 +100,8 @@ body,
 
 }
 
-
-/* active */
-/* .slick-active{
-    color:#A4C686 !important
-} */
+@media screen and (max-width: 375px) {
+    .slick-prev, .slick-next {
+        display:none !important;
+    }
+}

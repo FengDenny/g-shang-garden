@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <div className={`${stickyFooterStyling} app bg-color-white`}>
+    <div className={`${stickyFooterStyling} app `}>
       <Navbar
         isTopOfPage={isTopOfPage}
         isMenuToggled={isMenuToggled}
