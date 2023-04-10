@@ -10,6 +10,14 @@ export default {
       height: {
         "50vh": "30vh",
       },
+      gridTemplateColumns: {
+        "2-320": "repeat(2, minmax(0, 320px))",
+      },
+
+      fontSize: {
+        fontCalc: "calc(20px + (50 - 20) * ((100vw - 800px) / (2560 - 800))",
+      },
+
       colors: {
         "primary-green-100": "#A4C686",
         "primary-green-300": "#57812D",
@@ -56,6 +64,7 @@ export default {
       xs: { max: "480px" },
       sm: "768px",
       md: "1060px",
+      lg: "1280px",
     },
   },
   plugins: [],
