@@ -1,4 +1,4 @@
-export const navLinks = [
+export const cnNavLinks = [
     {
       id:"0",
       title: "家",
@@ -22,6 +22,33 @@ export const navLinks = [
     {
       id:"4",
       title: "聯系",
+      href:"/contact"
+    }
+  ];
+  export const enNavLinks = [
+    {
+      id:"0",
+      title: "Home",
+      href:"/"
+    },
+    {
+      id:"1",
+      title: "Gallery",
+      href:"/gallery"
+    },
+    {
+      id:"2",
+      title:"Feng Shui Garden",
+      href:"/fengshuigarden"
+    },
+    {
+      id:"3",
+      title:"About",
+      href:"/about"
+    },
+    {
+      id:"4",
+      title: "Contact",
       href:"/contact"
     }
   ];
