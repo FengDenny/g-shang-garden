@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "@/assets/logo.png";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import { navLinks } from "@/data/navLinks";
 import { FaBars } from "react-icons/fa";
 import Links from "@/components/Links";
+import DropdownMenu from "../Dropdown/DropdownMenu";
 
 type Props = {
   isTopOfPage: boolean;
@@ -36,8 +36,12 @@ const index = ({
           />
         </div>
         {isAboveMediumScreens ? (
-          <div className="relative top-12 w-full font-bold">
+          <div className="relative top-12 flex w-full flex-row justify-between font-bold">
             <Links styling="flex gap-6 sm:flex-row sm:text-xl" />
+
+            <div className="basis-1/4">
+              <DropdownMenu />
+            </div>
           </div>
         ) : (
           <button
