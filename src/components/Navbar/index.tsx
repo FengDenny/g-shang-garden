@@ -32,7 +32,7 @@ const index = ({
           <img
             src={Logo}
             alt="G Shang Garden logo"
-            className="relative left-3 h-16 w-16 sm:h-24 sm:w-24"
+            className="relative left-3 h-16 w-16 sm:h-20 sm:w-20"
           />
         </div>
         {isAboveMediumScreens ? (
