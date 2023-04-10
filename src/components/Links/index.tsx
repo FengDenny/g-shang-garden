@@ -1,14 +1,18 @@
 import React from "react";
-import { navLinks } from "@/data/navLinks";
+import DropdownMenu from "../Dropdown/DropdownMenu";
+
+import { translateObjArr } from "@/components/i18nTranslate/helper";
 
 type Props = { styling: string; liStlying?: string };
 
 const index = ({ styling, liStlying }: Props) => {
   const aLinkUnderLine =
     " bg-zeroThree  bg-0-100  bg-no-repeat transition-bgSize5sEaseInOut  hover:bg-OneHund3Pixel bg-gradient-yellow ";
+  const navigation = translateObjArr("navigation");
+
   return (
     <ul className={styling}>
-      {navLinks.map((items: any) => {
+      {navigation.map((items: any) => {
         const { title, id, href } = items;
         return (
           <li key={id} className={liStlying}>
