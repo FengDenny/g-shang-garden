@@ -21,8 +21,8 @@ const index = (props: Props) => {
       <div className="absolute z-10 w-full">
         <h2
           className="relative z-10 mx-auto text-center font-extrabold uppercase text-color-white-100 
-            below768:mt-28 below768:text-xl
-            xs:w-9/12
+            below768:mt-28 below768:w-8/12 below768:text-xl
+            xs:w-6/12
             sm:mt-40 sm:w-11/12 sm:text-3xl
             md:mt-56 md:text-4xl"
         >
