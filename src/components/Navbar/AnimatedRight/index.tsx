@@ -1,7 +1,7 @@
 import React from "react";
-import { navLinks } from "@/data/navLinks";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import Links from "@/components/Links";
+import DropdownMenu from "@/components/Dropdown/DropdownMenu";
 
 type Props = {
   isMenuToggled: boolean;
@@ -13,7 +13,7 @@ const index = ({ isMenuToggled, setIsMenuToggled }: Props) => {
   const hiddenSlide = "transition-all duration-100 translate-x-80 transform ";
   return (
     <div
-      className={`z-1000 fixed bottom-0 right-0 h-full w-[300px]  bg-primary-green-300 drop-shadow-xl ${
+      className={`fixed bottom-0 right-0 z-1000 h-full w-[300px]  bg-primary-green-300 drop-shadow-xl ${
         isMenuToggled ? activeSlide : hiddenSlide
       } `}
     >
@@ -29,6 +29,9 @@ const index = ({ isMenuToggled, setIsMenuToggled }: Props) => {
       {/* MENU ITEMS */}
       <div className={`ml-[33%] flex flex-col gap-10 text-2xl font-bold `}>
         <Links styling="sm:text-xl text-color-white" liStlying="py-2" />
+        <div className="relative bottom-5 -ml-3">
+          <DropdownMenu />
+        </div>
       </div>
     </div>
   );
