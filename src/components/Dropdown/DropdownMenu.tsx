@@ -37,15 +37,14 @@ const DropdownMenu = (props: Props): JSX.Element => {
       }
     >
       <div
-        className="w-auto rounded-sm
-       p-1 text-base
-      text-color-white
+        className="relative bottom-3
+       w-auto rounded-sm p-1 text-base text-color-white
       "
       >
         <img
           src={EnToCn}
           alt="English to Chinese"
-          className="relative bottom-3 mx-auto w-10 hover:rounded-md hover:bg-primary-green-100 hover:transition-colors
+          className="mx-auto h-10 w-10 hover:rounded-md hover:bg-primary-green-100 hover:transition-colors
           hover:delay-100 hover:duration-100
           "
         />
