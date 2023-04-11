@@ -1,22 +1,24 @@
-import React from "react";
-import { translate, translateObjArr } from "@/components/i18nTranslate/helper";
+import React, { useState } from "react";
+import { translateObjArr } from "@/components/i18nTranslate/helper";
+import Header from "@/components/SectionHeader";
+
+import Services from "@/components/Services";
 
 type Props = {};
 
 const index = (props: Props) => {
-  const services = translateObjArr("service.services");
-  const aLinkUnderLine =
-    " bg-zeroThree  bg-0-100  bg-no-repeat transition-bgSize5sEaseInOut  hover:bg-OneHund3Pixel bg-gradient-yellow ";
+  const services: Array<any> = translateObjArr("service.services");
+  const [active, setActive] = useState(services[0].id);
 
   return (
-    <section className=" ml-4  mt-4 w-4/6 p-10 xs:mx-auto">
+    <section className=" mx-auto mt-4 w-5/6 p-10 xs:mx-auto xs:w-full">
       <div className="flex flex-col">
-        <h6 className=" text-primary-green-300 underline decoration-primary-dark-300 underline-offset-4">
-          {translate("service.title")}
-        </h6>
-        <h2 className="pt-2 text-2xl font-extrabold text-primary-dark-300">
-          {translate("service.header")}
-        </h2>
+        <Header
+          translateHeader={"service.header"}
+          translateTitle={"service.title"}
+          animateHeader={"animate-moveInRight"}
+          animateTitle={"animate-moveInLeft"}
+        />
       </div>
       <div
         className="mt-6 grid grid-cols-2 
@@ -27,41 +29,11 @@ const index = (props: Props) => {
       
       "
       >
-        {services.map((items: any) => {
-          const { id, title, description, svg, preview } = items;
-
-          return (
-            <div key={id} className="flex flex-col py-10">
-              <img
-                src={svg}
-                alt="title"
-                className="h-12 w-12 rounded-full bg-primary-grey-100 p-2"
-              />
-              <h2 className="mt-4 font-extrabold text-primary-dark-300 xs:w-fit xs:text-lg sm:text-xl">
-                {translate(title)}
-              </h2>
-              <p
-                className=" text-fontCalc 
-                 pt-4 leading-8
-                  text-primary-dark-100  
-                  xs:line-clamp-[8]
-                  sm:w-80
-                  sm:pr-20
-                  lg:w-[26rem]
-                "
-              >
-                {translate(description)}
-              </p>
-
-              <a
-                href={preview}
-                className={`${aLinkUnderLine}  mt-2 w-[5.5rem] hover:text-primary-green-300`}
-              >
-                {translate("service.preview")}
-              </a>
-            </div>
-          );
-        })}
+        <Services
+          services={services}
+          active={active}
+          onMouseEnter={setActive}
+        />
       </div>
     </section>
   );
