@@ -1,6 +1,5 @@
 import React from "react";
-import { translate, translateObjArr } from "@/components/i18nTranslate/helper";
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { translateObjArr } from "@/components/i18nTranslate/helper";
 
 import Header from "@/components/SectionHeader";
 import Offer from "@/components/Offer";
@@ -22,7 +21,7 @@ const index = (props: Props) => {
             animateTitle={"animate-moveInLeft"}
           />
         </div>
-        <div className="">
+        <div>
           <Offer design={design} headerTranslate={"offer.designHeader"} />
           <Offer
             design={experience}
