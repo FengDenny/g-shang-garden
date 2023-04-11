@@ -9,7 +9,7 @@ export const enServices = [
         title: "Modern Feng Shui",
         description:"The purpose of Feng Shui is to find vitality. A lively place should be a place sheltered from the wind and facing the sun, with beautiful mountains and clear waters, gurgling water, lush vegetation, singing birds and dancing birds, and the fragrance of birds and flowers.",
         svg:feng_shui,
-        preview: "/gallery"
+        preview: "/garden"
     },
    {
         id:1,
@@ -30,7 +30,7 @@ export const enServices = [
         title: "Chinese Garden",
         description:"As a part of ancient Chinese traditional culture, Chinese garden culture has a great influence on world gardening culture. Gardens are a form of architectural art. It essentially aims to organize an environment full of temperament, fun and artistic conception.",
         svg: garden,
-        preview: "/gallery"
+        preview: "/garden"
     },
 ]
 
