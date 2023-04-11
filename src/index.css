@@ -52,6 +52,10 @@ body,
     font-size: 1.5rem !important;
 }
 
+.slick-prev, .slick-next {
+    display:none !important;
+}
+
 
 /* dots  */
 .slick-dots {
@@ -100,8 +104,8 @@ body,
 
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     .slick-prev, .slick-next {
         display:none !important;
     }
-}
+} */
