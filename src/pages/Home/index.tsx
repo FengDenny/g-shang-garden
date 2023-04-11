@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import Services from "./Services";
 import Offer from "./Offer";
+import Quality from "./Quality";
 import PageTitle from "@/components/Helmet";
 import { translate } from "@/components/i18nTranslate/helper";
 
@@ -14,6 +15,7 @@ const index = (props: Props) => {
         <Hero />
         <Services />
         <Offer />
+        <Quality />
       </div>
     </>
   );
