@@ -20,18 +20,22 @@ const index = (props: Props) => {
     <section className="relative">
       <div className="absolute z-10 w-full">
         <h2
-          className="relative z-10 mx-auto text-center font-extrabold uppercase text-color-white-100 
-            below768:mt-28 below768:w-8/12 below768:text-xl
-            xs:w-6/12
-            sm:mt-40 sm:w-11/12 sm:text-3xl
-            md:mt-56 md:text-4xl"
+          className="relative z-10 mx-auto animate-appear text-center font-extrabold uppercase 
+            text-color-white-100 below768:mt-28 below768:w-8/12
+            below768:text-xl
+            xs:w-[79.666667%] sm:mt-40 sm:w-11/12
+            sm:text-3xl md:mt-56
+            md:text-4xl
+            "
         >
           {translate("hero.title")}
           <span className="text-primary-green-100 md:text-2xl">.</span>
         </h2>
         <h6
           className="mx-auto mt-5
-            text-center text-lg text-primary-yellow-100 xs:mt-1 xs:w-8/12 xs:text-sm sm:w-11/12"
+            animate-appear text-center text-lg text-primary-yellow-100 xs:mt-1 xs:w-8/12 xs:text-sm
+            sm:w-11/12
+            "
         >
           {translate("hero.description")}
         </h6>
