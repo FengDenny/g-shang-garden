@@ -1,6 +1,9 @@
 import React from "react";
 import { translate, translateObjArr } from "@/components/i18nTranslate/helper";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+
+import Header from "@/components/SectionHeader";
+
 type Props = {};
 
 const index = (props: Props) => {
@@ -8,15 +11,15 @@ const index = (props: Props) => {
   const experience = translateObjArr("offer.experience");
 
   return (
-    <section className=" mt-30 mx-auto flex  w-3/6 p-10 ">
-      <div className="mx-auto w-11/12 ">
+    <section className=" mt-30 mx-auto flex  w-3/6 p-10 xs:w-full ">
+      <div className="mx-auto w-11/12 xs:w-full">
         <div className="text-center">
-          <h6 className="text-lg text-primary-green-300 underline decoration-primary-dark-300 underline-offset-2 ">
-            {translate("offer.title")}
-          </h6>
-          <h2 className="mt-2 text-xl font-extrabold text-primary-dark-300">
-            {translate("offer.header")}
-          </h2>
+          <Header
+            translateHeader={"offer.header"}
+            translateTitle={"offer.title"}
+            animateHeader={"animate-moveInRight"}
+            animateTitle={"animate-moveInLeft"}
+          />
         </div>
         <div className="">
           <div className="relative mt-10">
