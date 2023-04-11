@@ -46,7 +46,11 @@ export default {
       transitionProperty: {
         bgSize5sEaseInOut: "background-size .5s ease-in-out",
       },
-      animation: { appear: "appear 300ms ease-in-out forwards" },
+      animation: {
+        appear: "appear 1s ease-in-out forwards",
+        moveInLeft: "moveInLeft 3s",
+        moveInRight: "moveInRight 3s",
+      },
       keyframes: {
         appear: {
           from: {
@@ -54,6 +58,32 @@ export default {
           },
           to: {
             opacity: 1,
+          },
+        },
+        moveInLeft: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(-10px)",
+          },
+          "80%": {
+            transform: "translateX(10px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(0px)",
+          },
+        },
+        moveInRight: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(10px)",
+          },
+          "80%": {
+            transform: "translateX(-10px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(0px)",
           },
         },
       },
