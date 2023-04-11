@@ -50,6 +50,11 @@ export default {
         appear: "appear 1s ease-in-out forwards",
         moveInLeft: "moveInLeft 3s",
         moveInRight: "moveInRight 3s",
+        slide: "slide 2s linear infinite",
+        translateYBTop: "translateYBottomTop 2s forwards",
+        translateYTBottom: "translateYTopBottom 2s forwards",
+        translateXRightLeft: "translateXRightLeft 2s forwards",
+        translateXleftRight: "translateXleftRight 2.5s forwards",
       },
       keyframes: {
         appear: {
@@ -84,6 +89,64 @@ export default {
           "100%": {
             opacity: 1,
             transform: "translate(0px)",
+          },
+        },
+        slide: {
+          "0% ": {
+            opacity: "0",
+            transform: "translateX(2px)",
+          },
+          "20%": {
+            opacity: "1",
+            transform: "translateX(1px)",
+          },
+          "80%": {
+            opacity: "1",
+            transform: " translateX(1px)",
+          },
+          " 100%": {
+            opacity: "0",
+            transform: "translateX(2px)",
+          },
+        },
+        translateXleftRight: {
+          "25%": {
+            transform: " translateX(-10px)",
+            opacity: "0",
+          },
+          "26%": {
+            transform: "translateX(10px)",
+            opacity: " 0",
+          },
+        },
+        translateXRightLeft: {
+          "25%": {
+            transform: " translateX(10px)",
+            opacity: "0",
+          },
+          "26%": {
+            transform: "translateX(-10px)",
+            opacity: " 0",
+          },
+        },
+        translateYBottomTop: {
+          "25%": {
+            transform: "translateY(10px)",
+            opacity: 0,
+          },
+          "26%": {
+            transform: " translateY(-10px)",
+            opacity: 0,
+          },
+        },
+        translateYTopBottom: {
+          "25%": {
+            transform: "translateY(-10px)",
+            opacity: 0,
+          },
+          "26%": {
+            transform: " translateY(10px)",
+            opacity: 0,
           },
         },
       },
