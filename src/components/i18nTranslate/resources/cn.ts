@@ -22,6 +22,10 @@ export const cn = {
     design: cnDesign,
     experienceHeader:"經驗力",
     experience: cnExperience,
+  },
+  quality:{
+    title:"質",
+    header:"使用優質材料",
   }
   };
  

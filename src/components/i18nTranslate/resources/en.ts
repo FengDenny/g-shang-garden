@@ -23,6 +23,10 @@ export const en = {
     design: enDesign,
     experienceHeader:"Experience",
     experience: enExperience,
+  },
+  quality:{
+    title:"Quality",
+    header:"  High Quality Materials Used",
   }
   };
   
