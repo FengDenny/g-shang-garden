@@ -19,7 +19,6 @@ const AnimateNavbar = ({
     : "bg-primary-green-300 drop-shadow-xl h-32 text-color-white transition-colors delay-75 duration-75 ease-in-out";
 
   const observer = new IntersectionObserver(([entry]) => {
-    console.log("isIntersecting", entry.isIntersecting);
     if (entry.isIntersecting) {
       setIsTopOfPage(true);
     } else {
