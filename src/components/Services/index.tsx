@@ -33,7 +33,7 @@ const index = ({
               active === id
                 ? "rounded-lg hover:bg-color-white hover:px-4 hover:drop-shadow-lg hover:ease-in"
                 : ""
-            } flex flex-col py-4 transition-colors delay-75 duration-75`}
+            } flex flex-col py-4 transition-all delay-100 duration-75`}
             onMouseEnter={() => onMouseEnter(id)}
           >
             <img
