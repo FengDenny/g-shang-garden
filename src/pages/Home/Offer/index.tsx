@@ -11,7 +11,7 @@ const index = (props: Props) => {
   const experience: Array<any> = translateObjArr("offer.experience");
 
   return (
-    <section className=" mt-30 mx-auto flex  w-3/6 p-10 xs:w-full ">
+    <section className=" mx-auto mt-48 flex h-full  w-3/6 p-10 xs:w-full ">
       <div className="mx-auto w-11/12 xs:w-full">
         <div className="text-center">
           <Header
