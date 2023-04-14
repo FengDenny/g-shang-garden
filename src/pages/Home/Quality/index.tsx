@@ -1,5 +1,4 @@
 import React from "react";
-import { translate } from "@/components/i18nTranslate/helper";
 import Slider from "react-slick";
 import { sliderImg } from "@/data/quality";
 import Header from "@/components/SectionHeader";

@@ -1,4 +1,3 @@
-import React from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import Links from "@/components/Links";
 import SelectMenu from "@/components/Menu/Select/SelectMenu";
