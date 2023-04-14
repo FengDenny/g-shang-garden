@@ -7,10 +7,7 @@ type Props = {};
 const DropdownMenu = (props: Props): JSX.Element => {
   const [showDropDown, setShowDropDown] = useState<boolean>(false);
   const [, setSelectLang] = useState<string>("");
-
-  const language = () => {
-    return ["English (US)", "中文 (简体)"];
-  };
+  const [langType] = useState<string[]>(["中文 (简体)", "English (US)"]);
 
   const toggleDropDown = () => {
     setShowDropDown(!showDropDown);
@@ -51,7 +48,7 @@ const DropdownMenu = (props: Props): JSX.Element => {
       </div>
       {showDropDown && (
         <Dropdown
-          lang={language()}
+          lang={langType}
           showDropdown={false}
           langSelection={langSelection}
         />
