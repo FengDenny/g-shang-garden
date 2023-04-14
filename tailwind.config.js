@@ -54,6 +54,7 @@ export default {
         moveInRight: "moveInRight 2s ease-in-out forwards",
         slide: "slide 2s linear infinite",
         translateYBTop: "translateYBottomTop 2s forwards",
+        translateYTBottom: "translateYTopBottom 2s forwards",
         translateXRightLeft: "translateXRightLeft 2s forwards",
         translateXleftRight: "translateXleftRight 2.5s forwards",
       },
