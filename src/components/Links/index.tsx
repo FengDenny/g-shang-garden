@@ -1,5 +1,4 @@
 import React from "react";
-import DropdownMenu from "../Dropdown/DropdownMenu";
 
 import { translateObjArr } from "@/components/i18nTranslate/helper";
 
