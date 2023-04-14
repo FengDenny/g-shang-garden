@@ -11,7 +11,7 @@ const index = (props: Props) => {
   const [active, setActive] = useState(services[0].id);
 
   return (
-    <section className=" mx-auto mt-4 w-5/6 p-10 xs:mx-auto xs:w-full">
+    <section className=" mx-auto mt-4 h-full w-5/6 p-10 xs:mx-auto xs:w-full">
       <div className="flex flex-col">
         <Header
           translateHeader={"service.header"}
