@@ -6,9 +6,10 @@ import { enDesign, enExperience } from "@/data/offer";
 export const en = {
   navigation: enNavLinks,
   homeTitle: "G Shang Garden | Environmental Landscape",
+  copyright:"© 2023 G Shang Garden, Inc. All rights reserved.",
   hero:{
     title: "Landscaping ideas turned into reality",
-    description: "Telephone: (00) 415-678-6636 ｜ 408-686-2888"
+    description: "Telephone: 415-678-6636 ｜ 408-686-2888"
   },
   service: {
     title: "Services",
@@ -27,6 +28,20 @@ export const en = {
   quality:{
     title:"Quality",
     header:"  High Quality Materials Used",
+  },
+  footer:{
+    contact:{
+      title:"Contact",
+      description:"Feng Han Hui",
+    },
+    telephone:{
+      title:"Telephone",
+      description:"415-678-6636 | 408-686-288"
+    }  ,  
+    email:{
+      title:"Email",
+      description:"raymentf@gmail.com"
+    }
   }
   };
   
