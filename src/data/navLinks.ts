@@ -11,7 +11,7 @@ export const cnNavLinks = [
     },
     {
       id:"2",
-      title:"風水園林",
+      title:"園林",
       href:"/fengshuigarden"
     },
     {
@@ -38,7 +38,7 @@ export const cnNavLinks = [
     },
     {
       id:"2",
-      title:"Feng Shui Garden",
+      title:"Garden",
       href:"/fengshuigarden"
     },
     {
