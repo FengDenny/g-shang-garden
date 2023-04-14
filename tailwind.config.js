@@ -12,6 +12,8 @@ export default {
       },
       gridTemplateColumns: {
         "2-320": "repeat(2, minmax(0, 320px))",
+        "2-110": "repeat(2, minmax(0, 110px))",
+        "3-90": "repeat(3, minmax(0, 90px))",
       },
 
       fontSize: {
