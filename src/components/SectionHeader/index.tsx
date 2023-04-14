@@ -1,6 +1,6 @@
-import React from "react";
+import { useRef } from "react";
 import { translate } from "@/components/i18nTranslate/helper";
-import AnimateInView from "../helper/AnimateInView";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 
 type Props = {
   translateHeader: string;
@@ -15,20 +15,29 @@ const index = ({
   animateHeader,
   animateTitle,
 }: Props) => {
-  return (
-    <>
-      <AnimateInView styling={`${animateTitle}`}>
-        <h6 className="text-bold text-lg text-primary-green-300 underline decoration-primary-dark-300 underline-offset-4">
-          {translate(translateTitle)}
-        </h6>
-      </AnimateInView>
+  const ref = useRef<HTMLDivElement | null>(null);
 
-      <AnimateInView styling={`${animateHeader}`}>
-        <h2 className=" pt-2 text-2xl font-extrabold text-primary-dark-300">
-          {translate(translateHeader)}
-        </h2>
-      </AnimateInView>
-    </>
+  const entry = useIntersectionObserver(ref, {});
+  const isVisible = !!entry?.isIntersecting;
+
+  return (
+    <div ref={ref}>
+      <h6
+        className={`${
+          isVisible && animateTitle
+        } text-bold moveInRight text-lg text-primary-green-300 underline decoration-primary-dark-300 underline-offset-4`}
+      >
+        {translate(translateTitle)}
+      </h6>
+
+      <h2
+        className={`${
+          isVisible && animateHeader
+        }  pt-2 text-2xl font-extrabold text-primary-dark-300`}
+      >
+        {translate(translateHeader)}
+      </h2>
+    </div>
   );
 };
 
