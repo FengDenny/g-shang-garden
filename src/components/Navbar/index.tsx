@@ -3,7 +3,7 @@ import Logo from "@/assets/logo.png";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { FaBars } from "react-icons/fa";
 import Links from "@/components/Links";
-import DropdownMenu from "../Dropdown/DropdownMenu";
+import DropdownMenu from "../Menu/Dropdown/DropdownMenu";
 import AnimateNavbar from "../helper/AnimateNavbar";
 
 type Props = {
@@ -26,7 +26,7 @@ const index = ({ isMenuToggled, setIsMenuToggled, children }: Props) => {
         <img
           src={Logo}
           alt="G Shang Garden logo"
-          className="relative left-3 h-16 w-16 sm:h-20 sm:w-20"
+          className=" relative h-16 w-16 sm:h-20 sm:w-20 "
         />
       </div>
       {isAboveMediumScreens ? (
