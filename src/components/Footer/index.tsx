@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "@/assets/logo.png";
 import { translate } from "../i18nTranslate/helper";
 import Links from "@/components/Links";
-import SelectMenu from "@/components/Menu/Select/SelectMenu";
 type Props = {};
 
 const index = (props: Props) => {
@@ -20,9 +19,6 @@ const index = (props: Props) => {
         >
           {translate("copyright")}
         </h6>
-        <div className="mx-auto mt-2 sm:mx-0 sm:pl-4">
-          <SelectMenu styling="w-28 sm:w-40 " />
-        </div>
       </div>
       <div
         className=" w-5/6 basis-1/3  below768:mx-auto below768:w-[51%]
