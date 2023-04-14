@@ -1,7 +1,7 @@
-import React from "react";
+import { useRef } from "react";
 import { translate } from "@/components/i18nTranslate/helper";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import AnimateInView from "../helper/AnimateInView";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 type Props = {
   design: {
     id: number;
@@ -11,19 +11,23 @@ type Props = {
 };
 
 const index = ({ design, headerTranslate }: Props) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  const entry = useIntersectionObserver(ref, {});
+  const isVisible = !!entry?.isIntersecting;
+
   return (
-    <div className="relative mt-10">
-      <AnimateInView
-        styling={`${
+    <div className="relative mt-10" ref={ref}>
+      <h2
+        className={` ${
           headerTranslate.match("offer.designHeader")
-            ? "animate-translateYBTop"
-            : "animate-translateYTBottom"
-        }`}
+            ? isVisible && "animate-translateYBTop"
+            : isVisible && "animate-translateYTBottom"
+        } text-xl font-bold text-primary-dark-300 underline decoration-primary-green-300 underline-offset-8 below397:text-base`}
       >
-        <h2 className="text-xl font-bold text-primary-dark-300 underline decoration-primary-green-300 underline-offset-8 below397:text-base">
-          {translate(headerTranslate)}
-        </h2>
-      </AnimateInView>
+        {translate(headerTranslate)}
+      </h2>
+
       <div className="mt-8 grid grid-cols-2-320 gap-10 below768:grid-cols-1">
         {design.map((items: any) => {
           let { id, title } = items;
@@ -32,20 +36,23 @@ const index = ({ design, headerTranslate }: Props) => {
             <div className="flex flex-row" key={id}>
               <span
                 className={`
-                   animate-slide pr-2 text-2xl
-                text-primary-green-300 delay-75 duration-75`}
+                   pr-2 text-2xl
+                text-primary-green-300 `}
               >
                 <MdOutlineKeyboardDoubleArrowRight />
               </span>
-              <AnimateInView
-                styling={`${
-                  id % 2 === 0
-                    ? "animate-translateXRightLeft"
-                    : "animate-translateXleftRight"
-                } `}
+              <h5
+                className={`
+                 ${
+                   id % 2 === 0
+                     ? isVisible && "animate-translateXRightLeft"
+                     : isVisible && "animate-translateXleftRight"
+                 } 
+                font-semibold text-primary-dark-100
+                `}
               >
-                <h5 className="font-semibold text-primary-dark-100">{title}</h5>
-              </AnimateInView>
+                {title}
+              </h5>
             </div>
           );
         })}
