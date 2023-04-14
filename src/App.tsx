@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import AnimatedRight from "@/components/Navbar/AnimatedRight";
 import { useRoutes } from "react-router-dom";
 import Home from "@/pages/Home";
+import Footer from "@/components/Footer";
 
 function App() {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
@@ -30,6 +31,7 @@ function App() {
       <main className="grow">
         <Main />
       </main>
+      <Footer />
     </div>
   );
 }
