@@ -1,7 +1,7 @@
 import React from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import Links from "@/components/Links";
-import DropdownMenu from "@/components/Dropdown/DropdownMenu";
+import SelectMenu from "@/components/Menu/Select/SelectMenu";
 
 type Props = {
   isMenuToggled: boolean;
@@ -30,7 +30,7 @@ const index = ({ isMenuToggled, setIsMenuToggled }: Props) => {
       <div className={`ml-[33%] flex flex-col gap-10 text-2xl font-bold `}>
         <Links styling="sm:text-xl text-color-white" liStlying="py-2" />
         <div className="relative bottom-5 -ml-3">
-          <DropdownMenu />
+          <SelectMenu styling="text-lg ml-3 " />
         </div>
       </div>
     </div>
