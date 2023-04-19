@@ -41,7 +41,7 @@ const DropdownMenu = (props: Props): JSX.Element => {
         <img
           src={EnToCn}
           alt="English to Chinese"
-          className="mx-auto h-10 w-10 hover:rounded-md hover:bg-primary-green-100 hover:transition-colors
+          className="mx-auto h-12 w-12 p-2 hover:rounded-md hover:bg-primary-green-300 hover:transition-colors
           hover:delay-100 hover:duration-100
           "
         />
