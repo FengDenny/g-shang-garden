@@ -33,23 +33,30 @@ const PagePagination = ({ path }: Props) => {
   }, [length]);
 
   return (
-    <div>
-      <div>
-        {currentData?.map((item: any, index: number) => {
+    <div className="ml-2 mt-10">
+      <div className="grid below768:grid-cols-2 xs:grid-cols-1  sm:grid-cols-3">
+        {currentData?.map((item: any) => {
+          const { asset_id, secure_url, display_name } = item;
           return (
-            <div key={index}>
-              <h3>{item.display_name}</h3>
+            <div key={asset_id} className="mb-4">
+              <img
+                src={secure_url}
+                alt={display_name}
+                className="w-11/12 rounded-md shadow-xl"
+              />
             </div>
           );
         })}
       </div>
-      <Pagination
-        totalRecords={length}
-        pageLimit={LIMIT}
-        pageNeighbors={2}
-        onPageChanged={onPageChanged}
-        currentPage={currentPage}
-      />
+      <div>
+        <Pagination
+          totalRecords={length}
+          pageLimit={LIMIT}
+          pageNeighbors={2}
+          onPageChanged={onPageChanged}
+          currentPage={currentPage}
+        />
+      </div>
     </div>
   );
 };
