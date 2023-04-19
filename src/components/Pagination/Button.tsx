@@ -1,34 +1,32 @@
 import { ReactNode } from "react";
 
 type Props = {
-  index: number;
   onPageChanged: (e: any, page: number) => void;
   ariaLabel: string;
   children: ReactNode;
   page: number;
-  styling: string;
+  styling?: string;
   current?: string;
+  pages?: Boolean;
 };
 
 const Button = ({
-  index,
   onPageChanged,
   children,
   ariaLabel,
   styling,
-  current,
   page,
+  pages,
 }: Props) => {
   return (
-    <li key={index} className={current}>
-      <button
-        className={styling}
-        aria-label={ariaLabel}
-        onClick={(e) => onPageChanged(e, page)}
-      >
-        {children}
-      </button>
-    </li>
+    <button
+      className={`${styling} ${pages && "w-8 sm:w-10"}
+         border-x border-y-2 border-primary-green-300 p-1 sm:p-2 md:hover:bg-primary-green-300 md:hover:text-color-white `}
+      aria-label={ariaLabel}
+      onClick={(e) => onPageChanged(e, page)}
+    >
+      {children}
+    </button>
   );
 };
 

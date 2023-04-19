@@ -56,53 +56,61 @@ const index = ({
   return (
     <nav
       aria-label="Countries Pagination"
-      className="mt-2 w-80 rounded-md
-      bg-primary-grey-100 p-2 drop-shadow-lg
+      className=" mt-2 rounded-md
+       drop-shadow-lg 
       "
     >
-      <ul className="mx-auto flex w-full flex-row justify-center text-lg font-bold">
+      <ul className="mx-auto flex w-[90%] flex-row justify-center text-base font-bold text-primary-dark-300 ">
         {pages.map((page, index) => {
           if (page === LEFT_PAGE)
             return (
-              <Button
-                index={index}
-                styling={"w-10 border p-2 hover:bg-primary-green-300"}
-                ariaLabel="Previous"
-                page={pageNeighbors}
-                onPageChanged={(e: any) =>
-                  onPageChanged(e, pageNeighbors * 2 - 1)
-                }
-              >
-                <span aria-hidden="true">&laquo;</span>
-              </Button>
+              <li key={index}>
+                <Button
+                  ariaLabel="Previous"
+                  page={pageNeighbors}
+                  onPageChanged={(e: any) =>
+                    onPageChanged(e, pageNeighbors * 2 - 1)
+                  }
+                  pages
+                >
+                  <span aria-hidden="true">&laquo;</span>
+                </Button>
+              </li>
             );
 
           if (page === RIGHT_PAGE)
             return (
-              <Button
-                index={index}
-                styling={"w-10 border p-2 hover:bg-primary-green-300"}
-                ariaLabel="Next"
-                page={pageNeighbors}
-                onPageChanged={(e: any) =>
-                  onPageChanged(e, pageNeighbors * 2 + 2)
-                }
-              >
-                <span aria-hidden="true">&raquo;</span>
-              </Button>
+              <li key={index}>
+                <Button
+                  ariaLabel="Next"
+                  page={pageNeighbors}
+                  onPageChanged={(e: any) =>
+                    onPageChanged(e, pageNeighbors * 2 + 2)
+                  }
+                  pages
+                >
+                  <span aria-hidden="true">&raquo;</span>
+                </Button>
+              </li>
             );
 
           return (
-            <Button
-              index={index}
-              current={`${currentPage === page ? " bg-primary-green-300" : ""}`}
-              styling="border p-2"
-              ariaLabel="Change page"
-              page={pageNeighbors}
-              onPageChanged={(e: any) => onPageChanged(e, page)}
+            <li
+              key={index}
+              className={`${
+                currentPage === page
+                  ? " bg-primary-green-300 text-color-white"
+                  : ""
+              }`}
             >
-              {page}
-            </Button>
+              <Button
+                ariaLabel="Change page"
+                page={pageNeighbors}
+                onPageChanged={(e: any) => onPageChanged(e, page)}
+              >
+                {page}
+              </Button>
+            </li>
           );
         })}
       </ul>
