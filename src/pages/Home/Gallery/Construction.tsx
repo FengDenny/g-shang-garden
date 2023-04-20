@@ -1,9 +1,10 @@
 import React from "react";
+import PagePagination from "@/components/Pagination/PagePagination";
 
 type Props = {};
 
 const Construction = (props: Props) => {
-  return <div>Construction</div>;
+  return <PagePagination path={"construction"} />;
 };
 
 export default Construction;
