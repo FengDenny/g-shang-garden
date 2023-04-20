@@ -2,6 +2,8 @@ import {enNavLinks} from "@/data/navLinks"
 import { enServices } from "@/data/services";
 import { enDesign, enExperience } from "@/data/offer";
 
+import {GalleryTabs , cnGalleryTabs} from "@/data/tabs"
+
 
 export const en = {
   navigation: enNavLinks,
@@ -29,6 +31,11 @@ export const en = {
     title:"Quality",
     header:"  High Quality Materials Used",
   },
+  gallery:{
+    title: "Gallery | Preview what we've done",
+    tabs: GalleryTabs,
+  },
+
   footer:{
     contact:{
       title:"Contact",

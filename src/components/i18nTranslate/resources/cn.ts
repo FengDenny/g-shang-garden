@@ -1,6 +1,7 @@
 import {cnNavLinks} from "@/data/navLinks"
 import { cnServices } from "@/data/services";
 import { cnDesign, cnExperience } from "@/data/offer";
+import {cnGalleryTabs} from "@/data/tabs"
 
 export const cn = {
   navigation: cnNavLinks,
@@ -24,6 +25,13 @@ export const cn = {
     experienceHeader:"經驗力",
     experience: cnExperience,
   },
+  gallery:{
+    title: "圖庫館 | 预览我们所做的工作",
+    tabs: cnGalleryTabs,
+  },
+
+
+
   quality:{
     title:"質",
     header:"使用優質材料",
