@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { sliderImg } from "@/data/quality";
 import Header from "@/components/SectionHeader";
+import { translate } from "@/components/i18nTranslate/helper";
 
 type Props = {};
 
@@ -32,6 +33,9 @@ const index = (props: Props) => {
     ],
   };
 
+  const aLinkUnderLine =
+    " bg-zeroThree  bg-0-100  bg-no-repeat transition-bgSize5sEaseInOut  hover:bg-OneHund3Pixel bg-gradient-yellow ";
+
   return (
     <section className="mx-auto  mt-48  w-5/6 p-10 xs:w-full">
       <div className="flex flex-col items-end  xs:items-start">
@@ -41,6 +45,9 @@ const index = (props: Props) => {
           animateHeader={"animate-moveInRight"}
           animateTitle={"animate-moveInLeft"}
         />
+        <a className={`${aLinkUnderLine} mt-4 text-lg`} href="/fengshuigarden">
+          {translate("link")}
+        </a>
       </div>
       <div className="mt-2">
         <Slider {...settings}>

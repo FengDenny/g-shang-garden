@@ -8,6 +8,7 @@ export const cn = {
   homeTitle: "之尚園林 | 環境景觀",
   gardenTitle:"園林 | 预览 美丽的风水花园",
   copyright: "© 2023 之尚園林, 公司. 保留所有权利。",
+  link:"查看更多",
   hero:{
     title: "景观美化理念变为现实",
     description: "聯系電話: 415-678-6636 ｜ 408-686-2888"

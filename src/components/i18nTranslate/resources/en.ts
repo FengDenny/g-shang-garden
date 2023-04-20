@@ -10,6 +10,7 @@ export const en = {
   homeTitle: "G Shang Garden | Environmental Landscape",
   gardenTitle:"Garden | Preview Beautiful Feng Shui Gardens",
   copyright:"© 2023 G Shang Garden, Inc. All rights reserved.",
+  link:"See more",
   hero:{
     title: "Landscaping ideas turned into reality",
     description: "Telephone: 415-678-6636 ｜ 408-686-2888"
