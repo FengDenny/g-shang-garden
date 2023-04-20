@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-// import { GalleryTabs } from "@/data/tabs";
 import Tabs from "@/components/Tabs";
-import { translate, translateTabsObj } from "@/components/i18nTranslate/helper";
-import PageTitle from "@/components/Helmet";
+import { translateTabsObj } from "@/components/i18nTranslate/helper";
+import PageSection from "@/components/SectionHeader/PageSection";
 
 type Props = {};
 
@@ -12,14 +11,13 @@ const index = (props: Props) => {
 
   return (
     <>
-      <PageTitle pageTitle={translate("gallery.title")} />
-      <section className="mx-auto mt-40 w-[90%] p-4">
+      <PageSection tString="gallery.title">
         <Tabs
           tabs={GalleryTabs}
           selectedTab={selectedTab}
           onClick={setSelectedTab}
         />
-      </section>
+      </PageSection>
     </>
   );
 };
