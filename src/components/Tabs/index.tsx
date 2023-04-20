@@ -5,7 +5,6 @@ type Props = {
   tabs: {
     id: number;
     label?: string;
-    image?: string;
     Component: (props: { id: number }) => JSX.Element;
   }[];
   selectedTab: number;
