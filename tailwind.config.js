@@ -50,6 +50,7 @@ export default {
         bgSize5sEaseInOut: "background-size .5s ease-in-out",
       },
       animation: {
+        spin: "spin 2s infinite",
         appear: "appear 500ms ease-in-out forwards",
         moveInLeft: "moveInLeft 2s ease-in-out forwards",
         moveInRight: "moveInRight 2s ease-in-out forwards",
@@ -60,6 +61,14 @@ export default {
         translateXleftRight: "translateXleftRight 2.5s forwards",
       },
       keyframes: {
+        spin: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
         appear: {
           from: {
             opacity: 0,
