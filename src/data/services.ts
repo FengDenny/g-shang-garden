@@ -9,7 +9,7 @@ export const enServices = [
         title: "Modern Feng Shui",
         description:"The purpose of Feng Shui is to find vitality. A lively place should be a place sheltered from the wind and facing the sun, with beautiful mountains and clear waters, gurgling water, lush vegetation, singing birds and dancing birds, and the fragrance of birds and flowers.",
         svg:feng_shui,
-        preview: "/garden"
+        preview: "/fengshuigarden"
     },
    {
         id:1,
@@ -30,7 +30,7 @@ export const enServices = [
         title: "Chinese Garden",
         description:"As a part of ancient Chinese traditional culture, Chinese garden culture has a great influence on world gardening culture. Gardens are a form of architectural art. It essentially aims to organize an environment full of temperament, fun and artistic conception.",
         svg: garden,
-        preview: "/garden"
+        preview: "/fengshuigarden"
     },
 ]
 
@@ -40,7 +40,7 @@ export const cnServices = [
         title: "現代風水學",
         description:"風水的宗旨就是尋找生氣。而有生氣的地方應該是避風向陽，山清水秀，流水潺潺,草木欣欣，莺歌燕舞，鳥語花香之地。",
         svg:feng_shui,
-        preview: "/gallery"
+        preview: "/fengshuigarden"
     },
    {
         id:1,
@@ -61,7 +61,7 @@ export const cnServices = [
         title: "中國園林",
         description:"中國園林文化作為中國古老傳統文化的一部分，對世界園林文化產生了重大影響。園林是建築藝術的一種形式。其本質目的是營造一個充滿氣質、情趣和意境的環境。",
         svg: garden,
-        preview: "/gallery"
+        preview: "/fengshuigarden"
     },
 
 ]
