@@ -1,7 +1,7 @@
 export const cnNavLinks = [
     {
       id:"0",
-      title: "家",
+      title: "首页",
       href:"/"
     },
     {
