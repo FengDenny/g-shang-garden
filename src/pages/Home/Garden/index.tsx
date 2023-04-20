@@ -1,15 +1,15 @@
 import React from "react";
 import PagePagination from "@/components/Pagination/PagePagination";
-
+import PageSection from "@/components/SectionHeader/PageSection";
 type Props = {};
 
 const index = (props: Props) => {
   return (
-    <section className="mx-auto mt-40 w-[90%] p-4">
+    <PageSection tString="gardenTitle">
       <div className="mx-auto w-9/12">
         <PagePagination path="garden" />
       </div>
-    </section>
+    </PageSection>
   );
 };
 
