@@ -45,7 +45,10 @@ const index = (props: Props) => {
           animateHeader={"animate-moveInRight"}
           animateTitle={"animate-moveInLeft"}
         />
-        <a className={`${aLinkUnderLine} mt-4 text-lg`} href="/fengshuigarden">
+        <a
+          className={`${aLinkUnderLine}  mt-4 text-lg hover:text-primary-green-300`}
+          href="/fengshuigarden"
+        >
           {translate("link")}
         </a>
       </div>
