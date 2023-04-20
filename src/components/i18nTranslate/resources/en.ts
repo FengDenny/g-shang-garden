@@ -8,6 +8,7 @@ import {GalleryTabs , cnGalleryTabs} from "@/data/tabs"
 export const en = {
   navigation: enNavLinks,
   homeTitle: "G Shang Garden | Environmental Landscape",
+  gardenTitle:"Garden | Preview Beautiful Feng Shui Gardens",
   copyright:"© 2023 G Shang Garden, Inc. All rights reserved.",
   hero:{
     title: "Landscaping ideas turned into reality",
@@ -32,7 +33,7 @@ export const en = {
     header:"  High Quality Materials Used",
   },
   gallery:{
-    title: "Gallery | Preview what we've done",
+    title: "Gallery | Preview What We've Done",
     tabs: GalleryTabs,
   },
 
