@@ -6,6 +6,8 @@ import Home from "@/pages/Home";
 import Footer from "@/components/Footer";
 import Gallery from "@/pages/Home/Gallery";
 import Garden from "@/pages/Home/Garden";
+import About from "@/pages/Home/About";
+import Contact from "@/pages/Home/Contact";
 function App() {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
@@ -16,6 +18,8 @@ function App() {
       { path: "/", element: <Home /> },
       { path: "/gallery", element: <Gallery /> },
       { path: "/fengshuigarden", element: <Garden /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
       // { path: "/404", element: <NotFound /> },
       // { path: "*", element: <Navigate to="/404" replace /> },
     ]);
