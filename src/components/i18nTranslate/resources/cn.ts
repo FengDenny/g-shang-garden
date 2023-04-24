@@ -36,10 +36,10 @@ export const cn = {
     header:"使用優質材料",
   },
   about:{
- title:"關於 | 如何之尚園林被創造",
+ title:"關於我们  | 如何之尚園林被創造",
  aboutHero: "将每一件作品都视为艺术品，用心对待，精雕细琢",
  company:"之尚園林",
- aboutHeader:"關于",
+ aboutHeader:"關于我们",
  descriptionOne:"1993年, 智尚园林绿化事业成立. 我们位于旧金山湾区的中心, 拥有众多勤奋的员工. 我们的客户遍布全球, 包括台湾, 香港, 北京和上海. 由于口耳相传, 我们的声誉正在整个华人社区.",
  
  descriptionTwo:"之尚園林還 承接大量建设工程, 从砖, 石, 木, 水到种植草皮,为社区居民提供拆除沥青, 铺新砖, 维修, 清洁, 打蜡旧砖路, 庭院平台, 台阶, 人行道, 和花坛. 槽, 石水景, 木栅栏, 廊桥小溪, 喷灌, 草坪更换, 花木种植等全套园艺服务.",
@@ -47,6 +47,18 @@ export const cn = {
  ctaHeader:"联系我们免费估价",
  ctaBtnString:"联系我们"
   },
+  contact:{
+    title:"联系我们 | 发信息询价或免费估价 - 之尚園林",
+    header: "联系我们",
+    description:"给我们发电子邮件, 进行业务咨询或需要免费服务评估. 我们会尽快回复您.",
+    fullName:"全名",
+    email:"电子邮件地址",
+    message:"留言",
+    messageSent:"消息已发送",
+    sendMessage:"发送",
+
+  },
+
 
 
   footer:{
