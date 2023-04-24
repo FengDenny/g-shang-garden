@@ -18,10 +18,10 @@ const LabelWithInput = ({
   error,
 }: Props) => {
   return (
-    <div className="flex w-72 flex-col pt-2">
+    <div className="flex w-11/12 flex-col pt-2">
       <label
         htmlFor={htmlFor}
-        className="description-text  dark:text-color-description px-1 text-xl font-normal text-color-white dark:font-bold"
+        className="description-text  dark:text-color-description  text-base font-normal text-color-white dark:font-bold"
       >
         {labelName}
         <span className="text-rose-500">*</span>
@@ -32,7 +32,7 @@ const LabelWithInput = ({
           name={type}
           value={value}
           onChange={(e) => onChange(e)}
-          className="description-text border-b-primary-300 text-primary-300 caret-primary-pink-hover  h-9 w-60  
+          className="description-text border-b-primary-300 text-primary-300 caret-primary-pink-hover  h-9 w-full
     rounded-sm border-b border-solid px-1 text-lg 
     font-normal valid:focus-visible:outline-emerald-600 invalid:focus-visible:outline-rose-500 sm:w-72"
           required
@@ -40,11 +40,11 @@ const LabelWithInput = ({
       ) : type === "email" ? (
         <input
           id={id}
-          name={labelName}
+          name="email"
           type={type}
           value={value}
           onChange={(e) => onChange(e)}
-          className="description-text border-b-primary-300 text-primary-300 caret-primary-pink-hover h-9  w-60 rounded-sm  
+          className="description-text border-b-primary-300 text-primary-300 caret-primary-pink-hover h-9  w-full rounded-sm  
 border-b border-solid px-1 text-lg font-normal
 valid:focus-visible:outline-emerald-600 invalid:focus-visible:outline-rose-500 sm:w-72 "
           required
@@ -52,11 +52,11 @@ valid:focus-visible:outline-emerald-600 invalid:focus-visible:outline-rose-500 s
       ) : (
         <input
           id={id}
-          name={labelName}
+          name="fullName"
           type={type}
           value={value}
           onChange={(e) => onChange(e)}
-          className="description-text border-b-primary-300 text-primary-300 caret-primary-pink-hover h-9  w-60 rounded-sm  
+          className="description-text border-b-primary-300 text-primary-300 caret-primary-pink-hover h-9  w-full rounded-sm  
 border-b border-solid px-1 text-lg font-normal
 valid:focus-visible:outline-emerald-600 invalid:focus-visible:outline-rose-500 sm:w-72 "
           required
