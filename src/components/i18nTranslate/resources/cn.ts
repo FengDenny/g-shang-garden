@@ -57,6 +57,22 @@ export const cn = {
     messageSent:"消息已发送",
     sendMessage:"发送",
 
+    contactInfo:{
+      title:"聯系人",
+      description:"馮漢輝"
+    },
+    personal:{
+      numberTitle:"个人号码",
+      numberDescription:"415-678-6636",
+      emailTitle:"个人电邮",
+      emailDescription:"raymentf@gmail.com",
+    },
+   work:{
+      workTitle:"工作号码",
+      workDescription:"408-686-288",
+      emailTitle:"工作邮箱",
+      emailDescription:"gshanggarden@gmail.com"
+    },
   },
 
 

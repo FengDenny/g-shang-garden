@@ -49,14 +49,31 @@ export const en = {
     ctaBtnString:"Contact Us"
   },
   contact:{
-    title:"Contact Us | Send a message for inquries or free valuation - G Shang Garden",
+    title:"Contact Us | Send a message for inquiries or free valuation - G Shang Garden",
     header: "Contact Us",
-    description:"Send us an email, for business inquries or need a free service valuation. We'll get back to you as soon as we can.",
+    description:"Send us an email for business inquiries or need a free service valuation. We'll get back to you as soon as we can.",
     fullName:"Full Name",
     email:"Email Address",
     message:"Message",
     messageSent:"Message Sent",
     sendMessage:"Send",
+    contactInfo:{
+      title:"Contact",
+      description:"Feng Han Hui"
+    },
+    personal:{
+      numberTitle:"Personal number",
+      numberDescription:"415-678-6636",
+      emailTitle:"Personal email",
+      emailDescription:"raymentf@gmail.com",
+    },
+   work:{
+      workTitle:"Work number",
+      workDescription:"408-686-288",
+      emailTitle:"Work email",
+      emailDescription:"gshanggarden@gmail.com"
+    },
+
   },
 
   footer:{
