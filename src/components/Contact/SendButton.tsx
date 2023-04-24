@@ -20,9 +20,9 @@ const SendButton = ({
   handleSend,
 }: Props) => {
   return (
-    <div className="mx-auto mt-3 sm:mx-0">
+    <div className="mt-3 w-11/12 sm:w-full">
       {isLoading ? (
-        <FaSpinner className="text-primary-pink animate-spin text-2xl" />
+        <FaSpinner className="animate-spin text-2xl text-primary-yellow-300" />
       ) : (
         <button
           className="h-8 w-full 
