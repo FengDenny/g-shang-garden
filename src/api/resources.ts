@@ -1,5 +1,4 @@
 import { Buffer } from "buffer";
-Buffer.from("anything", "base64");
 
 export const imgResources = async (folder: string) => {
     const response = await fetch(
