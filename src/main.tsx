@@ -10,7 +10,7 @@ import "@/components/i18nTranslate/i18n";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <App />
     </Router>
   </React.StrictMode>
