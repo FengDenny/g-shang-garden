@@ -2,8 +2,9 @@ import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import ContactForm from "./ContactLayout";
 import { emailJSENV } from "@/data/emailjs";
-import { formValidation } from "@/components/helper/FormValidation";
-
+import { FormValidation } from "@/components/helper/FormValidation";
+import { useTranslation } from "react-i18next";
+import { translate } from "@/components/i18nTranslate/helper";
 type Props = {};
 
 const emailJS = (props: Props) => {
@@ -19,18 +20,38 @@ const emailJS = (props: Props) => {
   const [messageError, setMessageError] = useState<string>("");
 
   const { public_key, template_id, service_id } = emailJSENV;
+  const { i18n } = useTranslation();
+
+  const lang = i18n.language;
+
+  const translateNameError = lang === "en" ? "Full name" : "全名";
+  const translateEmailError = lang === "en" ? "Email address" : "电子邮件地址";
+  const translateMessageError = lang === "en" ? "Message" : "留言";
 
   useEffect(() => {
     fullName &&
-      formValidation(fullName, "Full name", "fullName", setFullNameError);
+      FormValidation(
+        lang,
+        fullName,
+        translateNameError,
+        "fullName",
+        setFullNameError
+      );
 
-    email && formValidation(email, "Email", "email", setEmailError);
-    message && formValidation(message, "Message", "message", setMessageError);
-  }, [fullName, email, message]);
+    email &&
+      FormValidation(lang, email, translateEmailError, "email", setEmailError);
+    message &&
+      FormValidation(
+        lang,
+        message,
+        translateMessageError,
+        "message",
+        setMessageError
+      );
+  }, [fullName, email, message, lang]);
 
   const handleSend = (e: any) => {
     e.preventDefault();
-
     setIsLoading(true);
 
     emailjs
