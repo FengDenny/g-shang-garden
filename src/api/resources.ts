@@ -1,14 +1,17 @@
 import { Buffer } from "buffer";
 
 export const imgResources = async (folder: string) => {
-  const auth = {login: '137827112126634', password: 'MxHh3jlJZfALgTNxlBnCCCdrh1g'} 
-
     const response = await fetch(
-      `/api/dis7ep3yq/resources/by_asset_folder?asset_folder=g shang garden/${folder}&max_results=500`,
+      `/api/${
+        import.meta.env.C_CLOUD_NAME
+      }/resources/by_asset_folder?asset_folder=g shang garden/${folder}&max_results=500`,
       {
         headers: {
           Authorization: `Basic ${Buffer.from(
-            auth.login +":"+auth.password).toString("base64")}`,
+            import.meta.env.C_API_KEY +
+              ":" +
+              import.meta.env.C_API_SECRET
+          ).toString("base64")}`,
         },
       }
     )
