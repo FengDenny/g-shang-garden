@@ -10,7 +10,7 @@ export const imgResources = async (folder: string) => {
           Authorization: `Basic ${Buffer.from(
             import.meta.env.VITE_C_API_KEY +
               ":" +
-              import.meta.env.VITE_C_API_SECRET
+              import.meta.env.C_API_SECRET
           ).toString("base64")}`,
         },
       }
