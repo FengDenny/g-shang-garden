@@ -11,7 +11,7 @@ export const imgResources = async (folder: string) => {
     ).toString("base64")
 
     const response = await axios.get(
-      `https://api.cloudinary.com/v1_1/${
+      `/api/${
         import.meta.env.VITE_C_CLOUD_NAME
       }/resources/by_asset_folder?asset_folder=g shang garden/${folder}&max_results=500`,
       {
