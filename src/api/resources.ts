@@ -14,7 +14,7 @@ export const imgResources = async (folder: string) => {
       `/api/${
         import.meta.env.VITE_C_CLOUD_NAME
       }/resources/by_asset_folder?asset_folder=g shang garden/${folder}&max_results=500`,
-      {
+      {baseURL:"https://gshanggarden.netlify.app/" ,
         headers: {
           Authorization: `Basic ${token}`,
         },
