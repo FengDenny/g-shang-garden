@@ -1,11 +1,6 @@
 import { Buffer } from "buffer";
 
 export const imgResources = async (folder: string) => {
-
-  console.log( import.meta.env.VITE_C_CLOUD_NAME,   import.meta.env.VITE_C_API_KEY +
-    ":" +
-    import.meta.env.VITE_C_API_SECRET)
-
     const response = await fetch(
       `/api/${
         import.meta.env.VITE_C_CLOUD_NAME
@@ -21,7 +16,6 @@ export const imgResources = async (folder: string) => {
       }
     )
       .then((result) => {
-        console.log(result)
         result.json()
       })
       .catch((err) => console.log(err));
