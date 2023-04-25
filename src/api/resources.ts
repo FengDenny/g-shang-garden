@@ -9,7 +9,7 @@ export const imgResources = async (folder: string) => {
     ":" +
     import.meta.env.VITE_C_API_SECRET
     ).toString("base64")
-    console.log( import.meta.env.VITE_C_CLOUD_NAME,  token)
+    console.log( import.meta.env.VITE_C_CLOUD_NAME)
 
     const response = await axios.get(
       `/api/${
