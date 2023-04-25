@@ -22,10 +22,9 @@ export const imgResources = async (folder: string) => {
       }
     )
       .then((result) => {
+        console.log(result.data)
         return result.data
       })
       .catch((err) => console.log(err));
-
-      console.log(response);
     return response;
   };
