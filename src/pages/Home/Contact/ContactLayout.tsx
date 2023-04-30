@@ -45,7 +45,7 @@ const ContactLayout = ({
         className="text-primary-100 mx-auto mt-40 flex  w-4/6  flex-col transition-colors       
        delay-100 duration-100 ease-in-out dark:text-color-white"
       >
-        <h2 className="mx-auto text-2xl  font-bold sm:text-3xl ">
+        <h2 className="mx-auto text-2xl  font-bold sm:text-3xl text-primary-green-300 ">
           {translate("contact.header")}
         </h2>
         <span className="border-b-color-description mx-auto mt-1 w-44 border-b border-solid"></span>
