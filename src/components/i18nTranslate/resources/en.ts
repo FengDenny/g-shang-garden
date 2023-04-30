@@ -69,7 +69,7 @@ export const en = {
     },
    work:{
       workTitle:"Work number",
-      workDescription:"408-686-288",
+      workDescription:"408-686-2888",
       emailTitle:"Work email",
       emailDescription:"gshanggarden@gmail.com"
     },
