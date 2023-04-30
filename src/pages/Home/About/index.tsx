@@ -2,8 +2,7 @@ import React from "react";
 import PageSection from "@/components/SectionHeader/PageSection";
 import AboutHero from "@/assets/about_hero.jpg";
 import { translate } from "@/components/i18nTranslate/helper";
-import Paragraphs from "@/components/About/Paragraphs";
-import { Heading3 } from "@/components/About";
+import { Heading3, Paragraphs } from "@/components/About";
 import { useNavigate } from "react-router-dom";
 
 type Props = {};

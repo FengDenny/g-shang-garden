@@ -1,3 +1,3 @@
 import { Heading3 } from "./Heading";
-
-export { Heading3 };
+import Paragraphs from "./Paragraphs"
+export { Heading3 , Paragraphs};
