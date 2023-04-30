@@ -90,6 +90,11 @@ export const cn = {
       title:"电子邮件",
       description:"raymentf@gmail.com"
     }
+  } , notFound:{
+    title:"找不到网页 - 之尚園林",
+    header:"错误 404",
+    description:"找不到此页面. 看起来你输错了地址. 让我们带你回家.",
+    btn:"去首页"
   }
   };
  

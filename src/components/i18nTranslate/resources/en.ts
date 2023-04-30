@@ -89,6 +89,12 @@ export const en = {
       title:"Email",
       description:"raymentf@gmail.com"
     }
+  },
+  notFound:{
+    title:"Page Not Found - G Shang Garden",
+    header:"Error 404",
+    description:"This page cannot be found. Looks like you have mistyped the address. Let's bring you back home. ",
+    btn:"Go Home"
   }
   };
   
