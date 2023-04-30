@@ -83,7 +83,7 @@ export const en = {
     },
     telephone:{
       title:"Telephone",
-      description:"415-678-6636 | 408-686-288"
+      description:"415-678-6636 | 408-686-2888"
     }  ,  
     email:{
       title:"Email",

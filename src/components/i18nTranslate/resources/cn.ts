@@ -69,7 +69,7 @@ export const cn = {
     },
    work:{
       workTitle:"工作号码",
-      workDescription:"408-686-288",
+      workDescription:"408-686-2888",
       emailTitle:"工作邮箱",
       emailDescription:"gshanggarden@gmail.com"
     },
@@ -84,7 +84,7 @@ export const cn = {
     },
     telephone:{
       title:"聯系電話",
-      description:"415-678-6636 | 408-686-288"
+      description:"415-678-6636 | 408-686-2888"
     }  ,  
     email:{
       title:"电子邮件",
