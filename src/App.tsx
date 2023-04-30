@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import AnimatedRight from "@/components/Navbar/AnimatedRight";
-import { useRoutes } from "react-router-dom";
+import { useRoutes, Navigate } from "react-router-dom";
 import Home from "@/pages/Home";
 import Footer from "@/components/Footer";
 import Gallery from "@/pages/Home/Gallery";
 import Garden from "@/pages/Home/Garden";
 import About from "@/pages/Home/About";
 import Contact from "@/pages/Home/Contact";
+import NotFound from "@/pages/NotFound"
 function App() {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
@@ -20,8 +21,8 @@ function App() {
       { path: "/fengshuigarden", element: <Garden /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
-      // { path: "/404", element: <NotFound /> },
-      // { path: "*", element: <Navigate to="/404" replace /> },
+      { path: "/404", element: <NotFound /> },
+      { path: "*", element: <Navigate to="/404" replace /> },
     ]);
 
     return routes;
